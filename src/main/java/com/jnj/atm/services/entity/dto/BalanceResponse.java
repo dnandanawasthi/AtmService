@@ -1,12 +1,12 @@
 package com.jnj.atm.services.entity.dto;
 
 import com.jnj.atm.services.entity.AccountsDetail;
-import com.jnj.atm.services.utility.Utilities;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.jnj.atm.services.utility.Utilities;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
-@XmlRootElement
+@XmlRootElement(name = "BalanceResponse")
 public class BalanceResponse {
 
     @JsonProperty

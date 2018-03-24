@@ -28,7 +28,7 @@ public class AtmServiceResource implements IAtmServiceResource {
 	 * @throws InputNotMatchException
 	 */
 	@Override
-	@GetMapping("balance/{id}")
+	@GetMapping(path =  "balance/{id}", produces = "application/json;charset=UTF-8")
 	public BalanceResponse getBalance(@PathVariable("id") Integer id, @RequestParam int pin)
 			throws InputNotMatchException {
 		BalanceResponse balanceResponse = iAtmService.getBalance(id, pin);
@@ -51,7 +51,7 @@ public class AtmServiceResource implements IAtmServiceResource {
 	 * @throws AtmLowBalanceException
 	 */
 	@Override
-	@GetMapping("withdraw/{id}")
+	@GetMapping(path =  "withdraw/{id}", produces = "application/json;charset=UTF-8")
 	public WithdrawResponse withdrawAmount(@PathVariable("id") Integer id, @RequestParam int pin,
 														   @RequestParam double withdrawAmount, @RequestParam int atmId)
 			throws AccountLowBalanceException, InputNotMatchException, AmountNotValidException, AtmLowBalanceException {

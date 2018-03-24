@@ -7,7 +7,7 @@ import com.jnj.atm.services.utility.Utilities;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.Map;
 
-@XmlRootElement
+@XmlRootElement(name = "WithdrawResponse")
 public class WithdrawResponse {
 
     @JsonProperty

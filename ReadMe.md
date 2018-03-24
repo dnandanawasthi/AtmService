@@ -54,3 +54,5 @@ To check exceptional message
 To get all the accounts
     http://localhost:8080/customer/accounts
 
+Reference:
+https://howtodoinjava.com/jaxb/solved-exception-in-thread-main-com-sun-xml-internal-bind-v2-runtime-illegalannotationsexception-3-counts-of-illegalannotationexceptions/
